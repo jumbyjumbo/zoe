@@ -1,0 +1,62 @@
+.primaryMenu {
+  background-color: #191919;
+  box-shadow: 0 0 16px 0 rgb(0, 0, 0, 0.7);
+}
+.primaryMenuItemContainer {
+  display: grid;
+  grid-template-rows: 5% 95%;
+  height: 98vh;
+  gap: 2vh;
+}
+.conversationSearchBox {
+  user-select: none;
+  width: 100%;
+  padding-top: 24px;
+  font-size: 110%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  resize: none;
+  color: #e1e1e1;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+.conversationSearchBox:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: ease 0.1s;
+}
+.conversationSearchBox:focus {
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+}
+.chatHistory {
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.conversationInstance {
+display: grid;
+grid-template-columns: 10% 90%;
+gap: 0.5vw;
+width: 100%;
+padding: 1vw;
+line-height: 125%;
+user-select: none;
+}
+.conversationInstance:hover {
+font-weight: bold;
+box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.3);
+background-color: rgba(255, 255, 255, 0.15);
+transition: ease 0.05s;
+}
+.conversationInstance-active {
+font-weight: bold;
+box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.3);
+background-color: rgba(255, 255, 255, 0.1);
+}
+.conversationEmoji {
+  font-size: 1rem;
+}
+.conversationTitle {
+  color: #8a8a8a;
+  text-align: left;
+}

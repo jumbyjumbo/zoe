@@ -1,0 +1,91 @@
+.secondaryMenuContainer {
+background-color: #131313;
+height: 100vh;
+}
+.secondaryMenu {
+height: 98vh;
+margin-top: 1vh;
+margin-bottom: 1vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-y: auto;
+gap: 1vh;
+}
+.sideMenuButton {
+background-color: transparent;
+
+height: 7vh;
+width: 7vh;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.sideMenuButton:hover {
+background-color: rgba(255, 255, 255, 0.15);
+box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+padding: 12px;
+height: 7vh;
+width: 7vh;
+transition: ease 0.2s;
+}
+.sideMenuButtonEmoji {
+font-size: 1.75rem;
+user-select: none;
+}
+.modelSelectOverlay {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;
+gap: 8vw;
+}
+.modelSelectContainer {
+height: 50vh;
+border-radius: 24px;
+background-color: rgba(25, 25, 25, 0.9);
+box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+display: flex;
+flex-direction: column;
+}
+.modelSelectTitle {
+color: #8a8a8a;
+font-size: 1.5em;
+font-weight: bold;
+margin: 18px;
+}
+.modelSelectList {
+display: flex;
+flex-direction: column;
+overflow-y: auto;
+}
+.modelSelectOption {
+color: #8a8a8a;
+width: 100%;
+padding: 8px 16px;
+cursor: pointer;
+user-select: none;
+text-align: left;
+}
+.modelSelectOption:hover {
+    font-weight: bold;
+    color: #e1e1e1;
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: ease 0.2s;
+}
+.modelSelectOption-active {
+font-weight: bold;
+color: #e1e1e1;
+box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.3);
+background-color: rgba(255, 255, 255, 0.05);
+}
